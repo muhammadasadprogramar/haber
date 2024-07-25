@@ -7,6 +7,16 @@
 
 body {
   width: 100%;
+  scroll-behavior: smooth;
+}
+
+#cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #f77b3e;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 10;
 }
 
 header > nav {
@@ -88,7 +98,7 @@ header > nav > .container > .social > .icon {
 header > nav > .container > .social > .icon:hover {
   background-color: #f77b3e;
   transition: 0.4s;
-  box-shadow: 0 0 8px #f77b3e;
+  box-shadow: 0 0 8px #fff;
 }
 
 header > nav > .container > .social > .icon > a {
@@ -163,7 +173,7 @@ header > nav > .container > #menu:hover {
 }
 
 .clients > .container h1 {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   line-height: 39px;
 }
 
@@ -177,6 +187,13 @@ header > nav > .container > #menu:hover {
   justify-content: center;
   color: #fff;
   font-size: 40px;
+  margin-top: 40px;
+}
+
+.clients > .container > .row > .col-12:hover {
+  box-shadow: 0 0 15px #dadada;
+  border-radius: 50px;
+  transition: 0.3s;
 }
 
 .clients > .container > .row > .col-12 > .light {
@@ -213,6 +230,7 @@ header > nav > .container > #menu:hover {
   border: 2px solid #f77b3e;
   border-top-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  margin-bottom: 40px;
 }
 
 .clients > .container > .row > .col-12 > button:hover {
@@ -230,7 +248,7 @@ header > nav > .container > #menu:hover {
 
 .invester > .container > h1 {
   line-height: 39px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .invester > .container > p {
@@ -254,7 +272,7 @@ header > nav > .container > #menu:hover {
 }
 
 .invester > .container > .row > .col-12 {
-  padding: 0px 20px ;
+  padding: 0px 20px;
 }
 
 .invester > .container > .row > .col-12 > .box {
@@ -340,6 +358,214 @@ header > nav > .container > #menu:hover {
   transition: 0.4s;
 }
 
+/* Logo Section */
+
+.compny {
+  width: 100%;
+  padding: 70px 0;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+}
+
+.compny > .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.compny > .container > .img > img {
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  padding: 70px 0;
+  background: linear-gradient(#424d53a5, #424d53a5), url(images/message.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer > .container > .row > .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer > .container > .row > .col-12 > input {
+  width: 100%;
+  height: 40px;
+  background: none;
+  background-color: #424d53c7;
+  border: none;
+  outline: none;
+  border: 2px solid #f77b3e;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.footer > .container > .row > .col-12 > input::placeholder {
+  color: #b6b6b6ed;
+}
+
+.footer > .container > .row > .col-12 > textarea {
+  width: 100%;
+  height: 140px;
+  background: none;
+  background-color: #424d53c7;
+  border: none;
+  outline: none;
+  border: 2px solid #f77b3e;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.footer > a > button {
+  padding: 7px 70px;
+  background-color: #f77b3e;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 40px;
+}
+
+.footer > a > button:hover {
+  box-shadow: 0 0 15px #fff;
+  transition: 0.4s;
+  color: #424d53;
+}
+
+/* Contact Section  */
+
+.contact {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #727f86;
+  color: #fff;
+}
+
+.contact > .container > .row > .col-12 > .box:hover {
+  background-color: #424d53;
+  box-shadow: 0 0 15px #f77b3e;
+  color: #f77b3e;
+  transition: all ease 0.4s;
+}
+
+.contact > .container > .row > .col-12 {
+  display: flex;
+  gap: 20px;
+}
+
+.contact > .container > .row > .col-12 > .box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f77b3e;
+  box-shadow: 0 0 15px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.contact > .container > .row > .col-12 > p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+/* Last Footer */
+
+.l-footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #424d53;
+  color: #fff;
+}
+
+.l-footer > .container > .row > .col-12 > .content {
+  display: flex;
+}
+
+.l-footer > .container > .row > .col-12 > .content > h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.l-footer > .container > .row > .col-12 > .content > p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.l-footer > .container > .row > .col-12 > .social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.l-footer > .container > .row > .col-12 > .social > .icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #f77b3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.l-footer > .container > .row > .col-12 > .social > .icon:hover {
+  box-shadow: 0 0 10px #fff;
+  transition: all 0.3s;
+}
+
+.l-footer > .container > .row > .col-12 > .social > .icon > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+.l-footer > .container > .row > .col-12 > iframe {
+  width: 100%;
+  height: 150px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #424d53;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f77b3e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
 @media (max-width: 991px) {
   header > nav > .container > .links {
     display: none;
@@ -363,6 +589,12 @@ header > nav > .container > #menu:hover {
   .invester > .container > .row > .col-12 {
     margin-top: 40px;
     padding: 0 30px;
+  }
+  .footer > .container > .row > .col-12 {
+    margin-top: 10px;
+  }
+  .footer > a > button {
+    margin-top: 27px;
   }
 }
 
@@ -400,7 +632,6 @@ header > nav > .container > #menu:hover {
     font-size: 30px;
   }
 
-
   .clients > h1 {
     margin: 0 auto;
   }
@@ -416,7 +647,7 @@ header > nav > .container > #menu:hover {
   .compersion .container-fluid > .row > .left {
     padding: 40px 30px;
   }
-  
+
   .compersion .container-fluid > .row > .right {
     padding: 40px 30px;
   }
@@ -430,4 +661,23 @@ header > nav > .container > #menu:hover {
     font-size: 14px;
   }
 
+  .footer {
+    padding: 60px 20px;
+  }
+
+  .footer > a > button {
+    padding: 7px 50px;
+  }
+
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .l-footer {
+    padding: 40px 20px;
+  }
+
+  .l-footer > .container > .row > .col-12 {
+    margin-top: 20px;
+  }
 }
